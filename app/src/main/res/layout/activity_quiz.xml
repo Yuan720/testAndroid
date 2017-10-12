@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_quiz"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="left"
+        android:text="Wechat"
+        android:textSize="16pt"
+        android:textColor="#f5f5f1"
+        android:background="#0c933e"
+
+
+        android:layout_alignParentTop="true"
+        android:id="@+id/textView" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/ic_action_search"
+
+
+
+
+        />
+    <LinearLayout
+        android:gravity="clip_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView"
+        android:orientation="vertical"
+
+        android:id="@+id/linearLayout2">
+<TableLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TableRow>
+
+
+
+            <TextView
+                android:id="@+id/account"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:text="账号："
+                android:textSize="20dp"
+                android:layout_marginBottom="20dp"
+                />
+
+        <EditText
+                    android:layout_width="350dp"
+                    android:layout_height="wrap_content"
+                    />
+
+
+
+
+    </TableRow>
+</TableLayout>
+
+
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TableRow>
+
+
+
+                <TextView
+                    android:id="@+id/password"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:text="密码："
+                    android:textSize="20dp"
+                    android:layout_marginBottom="20dp"
+                    />
+
+                <EditText
+                    android:layout_width="350dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPassword"
+                    />
+
+
+
+
+            </TableRow>
+
+            
+        </TableLayout>
+
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#a7c18b"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/buttonshappe"
+        android:text="登陆"
+        android:textSize="40dp"
+        android:layout_below="@+id/linearLayout2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="38dp" />
+
+
+</RelativeLayout>
